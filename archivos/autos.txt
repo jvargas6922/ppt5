@@ -8,3 +8,13 @@ Renault
 Volkswagen
 Nissan
 Honda
+Manzana
+Banana
+Cereza
+Durazno
+Uva
+Pera
+Piña
+Mango
+Kiwi
+Fresa
