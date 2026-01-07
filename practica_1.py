@@ -17,6 +17,19 @@ try:
     archivo = open(ruta_recursos + 'autos.txt', 'r')
     # leer el contenido del archivo
     contenido = archivo.read()
+    # Obtencion de atributos del archivo
+
+    # name
+    print(f"Nombre del archivo: {archivo.name}")
+
+    # mode
+    print(f"Modo de apertura del archivo: {archivo.mode}")
+
+    # closed
+    print(f"¿El archivo está cerrado?: {archivo.closed}")
+
+
+
     # imprimir el contenido en consola
     print(contenido)
     # cerrar el archivo
