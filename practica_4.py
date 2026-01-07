@@ -38,9 +38,13 @@ while True:
             print(f"- {fruta}")
         eleccion = input("¿Qué fruta desea comprar? ")
         if eleccion in frutas:
-            print(f"Ha comprado una {eleccion}. ¡Gracias por su compra!")
-            mensaje = f"Ha comprado una {eleccion}. ¡Gracias por su compra! \n"
-            archivo.write(mensaje)
+            try:
+                print(f"Ha comprado una {eleccion}. ¡Gracias por su compra!")
+                mensaje = f"Ha comprado una {eleccion}. ¡Gracias por su compra!"
+                data.write(mensaje + "\n")
+            except Exception as e:
+                print(e)
+                print("Error al escribir en el archivo.")
         else:
             print("Lo siento, esa fruta no está disponible.")
     elif opcion == "2":
@@ -49,9 +53,13 @@ while True:
             print(f"- {verdura}")
         eleccion = input("¿Qué verdura desea comprar? ")
         if eleccion in verduras:
-            print(f"Ha comprado una {eleccion}. ¡Gracias por su compra!")
-            mensaje = f"Ha comprado una {eleccion}. ¡Gracias por su compra! \n"
-            archivo.write(mensaje)
+            try:
+                print(f"Ha comprado una {eleccion}. ¡Gracias por su compra!")
+                mensaje = f"Ha comprado una {eleccion}. ¡Gracias por su compra!"
+                data.write(mensaje + "\n")
+            except Exception as e:
+                print(e)
+                print("Error al escribir en el archivo.")
         else:
             print("Lo siento, esa verdura no está disponible.")
     elif opcion == "3":
@@ -60,9 +68,13 @@ while True:
             print(f"- {snack}")
         eleccion = input("¿Qué snack desea comprar? ")
         if eleccion in snacks:
-            print(f"Ha comprado un paquete de {eleccion}. ¡Gracias por su compra!")
-            mensaje = f"Ha comprado un paquete de {eleccion}. ¡Gracias por su compra!"
-            archivo.write(mensaje)
+            try:
+                print(f"Ha comprado un paquete de {eleccion}. ¡Gracias por su compra!")
+                mensaje = f"Ha comprado un paquete de {eleccion}. ¡Gracias por su compra!"
+                data.write(mensaje + "\n")
+            except Exception as e:
+                print(e)
+                print("Error al escribir en el archivo.")
         else:
             print("Lo siento, ese snack no está disponible.")
     elif opcion == "4":
@@ -71,10 +83,9 @@ while True:
             print(f"- {bebida}")
         eleccion = input("¿Qué bebida desea comprar? ")
         if eleccion in bebidas:
-            print(f"Ha comprado una {eleccion}. ¡Gracias por su compra!")
-            mensaje = "Ha comprado una  " + eleccion + ". ¡Gracias por su compra!"
-            # mensaje = "Has comprado un bebida"
             try:
+                print(f"Ha comprado una {eleccion}. ¡Gracias por su compra!")
+                mensaje = "Ha comprado una  " + eleccion + ". ¡Gracias por su compra!"
                 data.write(mensaje + "\n")
                 print("Compra registrada exitosamente.")
             except Exception as e:
