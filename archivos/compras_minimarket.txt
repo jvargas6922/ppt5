@@ -1,4 +1,6 @@
 Ha comprado una manzana. ¡Gracias por su compra!
 Ha comprado una lechuga. ¡Gracias por su compra!
-Ha comprado un paquete de galletas. ¡Gracias por su compra!
-Ha comprado una  cerveza. ¡Gracias por su compra!
+Ha comprado una manzana. ¡Gracias por su compra!
+Ha comprado una banana. ¡Gracias por su compra!
+Ha comprado una tomate. ¡Gracias por su compra!
+Ha comprado una cerveza. ¡Gracias por su compra!
